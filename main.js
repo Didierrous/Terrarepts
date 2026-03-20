@@ -1,23 +1,6 @@
 // main.js
 document.addEventListener("DOMContentLoaded", () => {
 
-  // FUNCIÓN PARA ABRIR WHATSAPP
-  function contactar() {
-    const numero = "5218135092997"; // tu número celular México
-    const url = "https://wa.me/" + encodeURIComponent(numero);
-    
-    const nuevaPestana = window.open(url, "_blank");
-    if (!nuevaPestana) {
-      window.location.href = url;
-    }
-  }
-
-  // Asignar función al botón
-  const boton = document.getElementById("btn-whatsapp");
-  if (boton) {
-    boton.addEventListener("click", contactar);
-  }
-
   // SCROLL SUAVE PARA EL MENÚ
   document.querySelectorAll('.menu a').forEach(link => {
     link.addEventListener('click', function(e) {
