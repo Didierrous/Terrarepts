@@ -1,4 +1,9 @@
+// main.js
+
+// FUNCIÓN PARA ABRIR WHATSAPP
 function contactar() {
+  // Número de WhatsApp en formato internacional correcto (México)
+  // Solo funciona si el número es un celular con WhatsApp
   window.open("https://wa.me/5218135092997", "_blank");
 }
 
@@ -8,10 +13,11 @@ document.querySelectorAll('.menu a').forEach(link => {
     e.preventDefault();
 
     const destino = document.querySelector(this.getAttribute('href'));
-
-    destino.scrollIntoView({
-      behavior: 'smooth'
-    });
+    if (destino) {  // Verifica que exista el destino
+      destino.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
   });
 });
 
