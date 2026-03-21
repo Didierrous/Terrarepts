@@ -155,4 +155,19 @@ footer {
   margin-bottom: 20px;
   border-radius: 10px; /* opcional */
 }
+/* TEXTO "COTIZAR POR WHATSAPP" */
+.btn-whatsapp {
+  color: #25D366;
+  font-size: 24px;
+  font-weight: 900;
+  text-decoration: none;
+  font-family: 'Arial Black', sans-serif;
+  display: inline-block;
+  margin-top: 10px;
+  text-shadow: 0 0 10px rgba(37, 211, 102, 0.7);
+}
+.btn-whatsapp:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
 
