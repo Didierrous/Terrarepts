@@ -278,21 +278,30 @@ footer {
 .red-float img {
   width: 30px;
   height: 30px;
-  filter: brightness(0) invert(1); /* convierte el SVG a blanco por defecto */
 }
 
-/* Colores específicos por app */
-.red-float.whatsapp img {
-  filter: invert(51%) sepia(84%) saturate(473%) hue-rotate(123deg) brightness(94%) contrast(90%);
+
+
+/* Hover efecto */
+.red-float:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
-.red-float.instagram img {
-  filter: invert(33%) sepia(78%) saturate(552%) hue-rotate(300deg) brightness(93%) contrast(92%);
+.red-float img {
+  width: 35px;  /* ajusta según tu imagen */
+  height: 35px;
+  object-fit: contain;
 }
 
-.red-float.facebook img {
-  filter: invert(34%) sepia(92%) saturate(430%) hue-rotate(199deg) brightness(96%) contrast(91%);
-}
+
+
+
+
+/* Posiciones individuales si quieres que cada botón esté en un lugar distinto */
+.red-float.whatsapp { bottom: 20px; right: 20px; }
+.red-float.facebook { bottom: 90px; right: 20px; }
+.red-float.instagram { bottom: 160px; right: 20px; }
 
 /* Hover efecto */
 .red-float:hover {
