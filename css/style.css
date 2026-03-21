@@ -171,3 +171,16 @@ footer {
   transition: 0.3s;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
+  font-weight: 900;
+  color: #22c55e;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+}
