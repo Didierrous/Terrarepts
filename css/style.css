@@ -42,24 +42,25 @@ body {
   color: #22c55e;
 }
 
-/* HERO */
+
+
+
+/* HERO – fondo respirando */
 .hero {
     height: 90vh;
-
-    background-image: url('images/fondo-escamoso.png');
+    background-image: url('images/fondo-escamoso.png'); /* ruta correcta */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-
-    /* Animación de respiración */
+    color: white;
     animation: respirar 8s ease-in-out infinite alternate;
 }
 
+/* Animación “respirar” */
 @keyframes respirar {
     0% {
         background-size: 100% 100%;
@@ -67,12 +68,22 @@ body {
     }
     50% {
         background-size: 105% 105%;
-        background-position: 52% 48%; /* un pequeño desplazamiento */
+        background-position: 52% 48%;
     }
     100% {
         background-size: 100% 100%;
         background-position: center center;
     }
+}
+
+
+
+
+/* Opcional: texto dentro de hero más visible */
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.4); /* oscurece ligeramente el fondo detrás del texto */
+    padding: 20px 30px;
+    border-radius: 10px;
 }
 .hero-text h2 {
   font-size: 40px;
